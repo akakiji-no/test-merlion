@@ -23,7 +23,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        app('url')->useOrigin('http://vhklgn.i996.me');
         // 注册自定义 Merlion 表单字段
         Field::$fieldsMap['password'] = Password::class;
         Field::$fieldsMap['treeSelect'] = TreeSelect::class;
